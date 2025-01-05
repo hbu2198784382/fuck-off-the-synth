@@ -1,6 +1,6 @@
-from pysynth.Oscillator import Oscillator
-from pysynth.Filter import Filter
-from pysynth.Waves import Waves
+from fots.Oscillator import Oscillator
+from fots.Filter import Filter
+from fots.Waves import Waves
 
 # define freqencies of each notes
 A3 = 440 # standard

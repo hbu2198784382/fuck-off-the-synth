@@ -3,7 +3,7 @@ import numpy as np
 class Waves:
     def sinwave(x):
         """
-        Returns the sine wave of x.
+        Returns the sine wave of x.With period 2*pi.
 
         Args:
             x (float or numpy array): The input value(s).
@@ -15,7 +15,7 @@ class Waves:
 
     def squarewave(x):
         """
-        Returns the square wave of x.
+        Returns the square wave of x.With period 2*pi.
 
         Args:
             x (float or numpy array): The input value(s).
@@ -27,7 +27,7 @@ class Waves:
 
     def sawtoothwave(x):
         """
-        Returns the sawtooth wave of x.
+        Returns the sawtooth wave of x.With period pi.
 
         Args:
             x (float or numpy array): The input value(s).
@@ -39,7 +39,7 @@ class Waves:
 
     def trianglewave(x):
         """
-        Returns the triangle wave of x.
+        Returns the triangle wave of x.With period pi.
 
         Args:
             x (float or numpy array): The input value(s).
