@@ -11,18 +11,18 @@ class Oscillator:
         self.wave = wave
         self.sr = sample_rate
 
-    def generate(self, stime:float, freq:float, amp:float,phase:int = 0):
+    def generate(self, duration:float, freq:float, amp:float,phase:int = 0) -> np.ndarray:
         """Generate a waveform using the given waveform function and parameters
 
         Args:
-            stime (float): The sustain time of the waveform.
+            duration (float): The sustain time of the waveform.
             freq (float): The frequency of the waveform.
             amp (float): The amplitude of the waveform.
             phase (int, optional): The initial phase of the waveform. Defaults to 0.
 
         Returns:
-            _type_: _description_
+            np.ndarray: The generated waveform.
         """
-        tn = np.linspace(0, stime, self.sr*stime)
-        return amp*self.wave(2*np.pi*freq*tn + phase)
+        tn = np.linspace(0, duration, self.sr*duration)
+        return amp*self.wave(2*np.pi*freq*tn + phase).astype(np.float32)
         
