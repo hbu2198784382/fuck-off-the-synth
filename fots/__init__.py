@@ -1,7 +1,7 @@
 from fots.Oscillator import Oscillator
 from fots.Filter import Filter
 from fots.Waves import Waves
-from fots.Sequence import Sequence
+from fots.Sequence import Sequence,Metronome
 
 # define freqencies of each notes
 A3 = 440 # standard

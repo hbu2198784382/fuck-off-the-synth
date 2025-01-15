@@ -13,3 +13,7 @@ class Sequence:
     
     def sleep(self, duration):
         self.sequence = np.append(self.sequence, self.sr*duration)
+
+class Metronome:
+    def set(bpm):
+        return 1/(bpm/60)

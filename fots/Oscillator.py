@@ -23,6 +23,6 @@ class Oscillator:
         Returns:
             np.ndarray: The generated waveform.
         """
-        tn = np.linspace(0, duration, self.sr*duration)
+        tn = np.linspace(0, duration, int(self.sr*duration))
         return amp*self.wave(2*np.pi*freq*tn + phase).astype(np.float32)
         
